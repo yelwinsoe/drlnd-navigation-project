@@ -2,3 +2,4 @@ Banana.app
 .ipynb_checkpoints
 .vscode
 __pycache__
+unity-environment.log

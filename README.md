@@ -5,17 +5,28 @@ This project is for the Udacity Deep Reinforcement Learning Nano Degree program.
 
 ## Getting Started
 Following the instruction below to setup your development environment.
-1. Download this repository.
-2. Download one of the Unity Environment based on your operating system.
+1. Follow the instruction from [this link](https://github.com/udacity/deep-reinforcement-learning#dependencies) to setup your python development and install dependencies.
+2. Download this repository.
+3. Download one of the Unity Environment based on your operating system pre-build by Udacity.
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
     Put the file in this repository folder and unzip the file.
-3. Install Unity ML-Agents, NumPy and PyTorch by following the instruction from the link below.
-    - [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md)
-    - [NumPy](http://www.numpy.org/)
-    - [PyTorch](https://pytorch.org/get-started/locally/)
 4. Run jupyter notebook in the root of this repository, if you don't have it yet you can [click here](https://jupyter.org/install) to install.
 5. Follow along the instruction in Navigation.ipynb to train and test the model.
+
+## Environment Details
+There are 4 actions and 37 state space in ths simulatt.
+The actions being -
+1. Walk foward
+2. Walk backward
+3. Turn Left
+4.Turn Right
+
+The states contains agent's velocity, ray-based perception of objects around agent's forward directionn.
+
+A  reward +1 is provided for collecting banana and -1 for collecting a blue banana.
+
+The environment is coosidered solved when the agent is able to collect +13 rewards on average of 100 plays.
