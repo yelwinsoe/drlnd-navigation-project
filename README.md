@@ -23,7 +23,7 @@ The actions being -
 1. Walk foward
 2. Walk backward
 3. Turn Left
-4.Turn Right
+4. Turn Right
 
 The states contains agent's velocity, ray-based perception of objects around agent's forward directionn.
 
